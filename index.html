@@ -1,83 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade – Calculadora do Trabalhador</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
-      line-height: 1.6;
-    }
-    h1 { color: #2c3e50; }
-    h2 { color: #34495e; margin-top: 2em; }
-    p  { margin: 0.8em 0; }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pol&iacute;tica de Privacidade | Calculadora do Trabalhador</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f7fb;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --accent: #0f766e;
+        --border: #dbe4ee;
+        --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+      }
 
-  <h1>Política de Privacidade – Calculadora do Trabalhador</h1>
-  <p><strong>Última atualização:</strong> março de 2026</p>
+      * {
+        box-sizing: border-box;
+      }
 
-  <p>
-    O aplicativo <strong>Calculadora do Trabalhador</strong> foi desenvolvido com
-    respeito à privacidade dos seus usuários. Esta política descreve como tratamos
-    (ou não tratamos) as suas informações.
-  </p>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(15, 118, 110, 0.12), transparent 32%),
+          var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
 
-  <h2>1. Coleta de Dados</h2>
-  <p>
-    O aplicativo <strong>não coleta, armazena nem transmite</strong> qualquer dado
-    pessoal para servidores externos. Todos os cálculos são realizados localmente
-    no seu dispositivo.
-  </p>
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 40px 20px 56px;
+      }
 
-  <h2>2. Uso de Dados</h2>
-  <p>
-    Como nenhum dado é coletado, nenhum dado é compartilhado com terceiros, vendido
-    ou utilizado para fins publicitários.
-  </p>
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        padding: 32px;
+      }
 
-  <h2>3. Permissões</h2>
-  <p>
-    O aplicativo não solicita permissões sensíveis (como acesso à câmera,
-    microfone, localização ou contatos). As únicas permissões utilizadas são as
-    estritamente necessárias para o funcionamento básico do app.
-  </p>
+      h1,
+      h2 {
+        line-height: 1.2;
+        margin-top: 0;
+      }
 
-  <h2>4. Armazenamento Local</h2>
-  <p>
-    Algumas preferências do usuário (como configurações de cálculo) podem ser
-    salvas localmente no dispositivo para melhorar a experiência de uso. Esses
-    dados permanecem exclusivamente no dispositivo e podem ser removidos a qualquer
-    momento ao desinstalar o aplicativo.
-  </p>
+      h1 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        margin-bottom: 12px;
+      }
 
-  <h2>5. Serviços de Terceiros</h2>
-  <p>
-    O aplicativo pode utilizar serviços de terceiros (como a Google Play) que
-    possuem suas próprias políticas de privacidade. Recomendamos a leitura das
-    políticas desses serviços.
-  </p>
+      h2 {
+        font-size: 1.15rem;
+        margin-top: 28px;
+        margin-bottom: 10px;
+        color: var(--accent);
+      }
 
-  <h2>6. Alterações nesta Política</h2>
-  <p>
-    Esta política pode ser atualizada periodicamente. Quaisquer alterações serão
-    publicadas nesta página. Recomendamos a revisão periódica deste documento.
-  </p>
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+      }
 
-  <h2>7. Contato</h2>
-  <p>
-    Em caso de dúvidas sobre esta política de privacidade, entre em contato pelo
-    repositório oficial:
-    <a href="https://github.com/josediogonc/calculadora-trabalhador-privacy">
-      github.com/josediogonc/calculadora-trabalhador-privacy
-    </a>.
-  </p>
+      ul {
+        padding-left: 20px;
+        margin: 12px 0 0;
+      }
 
-</body>
+      .updated-at {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: rgba(15, 118, 110, 0.1);
+        color: var(--accent);
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+
+      .notice {
+        margin-top: 24px;
+        padding: 18px 20px;
+        border-left: 4px solid var(--accent);
+        background: rgba(15, 118, 110, 0.08);
+        border-radius: 12px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 640px) {
+        .card {
+          padding: 24px;
+          border-radius: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>Pol&iacute;tica de Privacidade</h1>
+        <span class="updated-at">&Uacute;ltima atualiza&ccedil;&atilde;o: 25 de mar&ccedil;o de 2026</span>
+
+        <p>
+          Esta Pol&iacute;tica de Privacidade descreve como o app <strong>Calculadora do
+          Trabalhador</strong> trata informa&ccedil;&otilde;es relacionadas ao uso do aplicativo.
+        </p>
+
+        <h2>1. Dados coletados</h2>
+        <p>
+          O app coleta apenas dados an&ocirc;nimos e t&eacute;cnicos para fins de melhoria de
+          desempenho, estabilidade e experi&ecirc;ncia de uso.
+        </p>
+        <ul>
+          <li>
+            <strong>Firebase Analytics:</strong> utilizado para m&eacute;tricas an&ocirc;nimas
+            de uso, como telas acessadas, intera&ccedil;&otilde;es gerais e dados agregados de
+            navega&ccedil;&atilde;o.
+          </li>
+          <li>
+            <strong>Firebase Crashlytics:</strong> utilizado para identificar
+            falhas, erros e problemas t&eacute;cnicos que afetem o funcionamento do app.
+          </li>
+        </ul>
+
+        <h2>2. Dados n&atilde;o coletados</h2>
+        <p>
+          O app n&atilde;o solicita cadastro e n&atilde;o tem como objetivo coletar dados
+          pessoais identific&aacute;veis, como nome, CPF, e-mail, endere&ccedil;o ou documentos
+          do usu&aacute;rio, salvo se isso vier a ser expressamente informado em vers&atilde;o
+          futura.
+        </p>
+
+        <h2>3. Finalidade do tratamento</h2>
+        <p>Os dados an&ocirc;nimos coletados s&atilde;o usados exclusivamente para:</p>
+        <ul>
+          <li>monitorar o desempenho e a estabilidade do aplicativo;</li>
+          <li>identificar erros e corrigi-los;</li>
+          <li>entender, de forma agregada, como o app &eacute; utilizado;</li>
+          <li>aprimorar recursos e a experi&ecirc;ncia do usu&aacute;rio.</li>
+        </ul>
+
+        <h2>4. Compartilhamento de informa&ccedil;&otilde;es</h2>
+        <p>
+          As informa&ccedil;&otilde;es t&eacute;cnicas e an&ocirc;nimas podem ser processadas por servi&ccedil;os
+          do Firebase/Google estritamente para analytics e monitoramento de
+          falhas, conforme as pol&iacute;ticas desses provedores.
+        </p>
+
+        <h2>5. Sobre os c&aacute;lculos disponibilizados</h2>
+        <p>
+          O app oferece estimativas e simula&ccedil;&otilde;es com base nas informa&ccedil;&otilde;es
+          inseridas pelo usu&aacute;rio e nas regras implementadas no sistema. Embora
+          haja esfor&ccedil;o para manter os c&aacute;lculos corretos e atualizados, os
+          resultados possuem car&aacute;ter meramente informativo.
+        </p>
+
+        <div class="notice">
+          <p>
+            O <strong>Calculadora do Trabalhador</strong> n&atilde;o presta consultoria
+            jur&iacute;dica, cont&aacute;bil ou trabalhista e <strong>n&atilde;o se responsabiliza
+            judicialmente</strong> por decis&otilde;es, preju&iacute;zos, interpreta&ccedil;&otilde;es ou
+            medidas tomadas com base nos c&aacute;lculos apresentados no app. Para fins
+            legais, recomenda-se consultar um profissional habilitado.
+          </p>
+        </div>
+
+        <h2>6. Seguran&ccedil;a</h2>
+        <p>
+          S&atilde;o adotadas medidas razo&aacute;veis para reduzir riscos t&eacute;cnicos e melhorar a
+          seguran&ccedil;a do aplicativo, observadas as limita&ccedil;&otilde;es inerentes ao ambiente
+          digital e aos servi&ccedil;os de terceiros utilizados.
+        </p>
+
+        <h2>7. Altera&ccedil;&otilde;es nesta pol&iacute;tica</h2>
+        <p>
+          Esta Pol&iacute;tica de Privacidade pode ser atualizada a qualquer momento para
+          refletir melhorias no app, ajustes legais ou mudan&ccedil;as nos servi&ccedil;os
+          utilizados. A vers&atilde;o mais recente ser&aacute; sempre a disponibilizada nesta
+          p&aacute;gina.
+        </p>
+
+        <h2>8. Contato</h2>
+        <p>
+          Se desejar, substitua esta se&ccedil;&atilde;o por um e-mail oficial de contato para
+          d&uacute;vidas sobre esta pol&iacute;tica.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
